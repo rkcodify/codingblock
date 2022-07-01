@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+.contactpost{
+    margin-top: 130px;
+    background-color: rgb(153, 153, 153);
+    width: 591px;
+    margin-left: 444px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px #767677;
+}
+.contactform {
+    display: grid;
+    grid-template-columns: 150px 200px;
+    text-align: -moz-left;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.name,
+.email,
+.telephone,
+.password{
+    width: 305px;
+    height: 30px;
+    border: solid rgb(0, 0, 0) 1px;
+    border-radius: 6px;
+    margin: 2px;
+    font-size: 1.5rem;
+    box-shadow: 2px 2px 10px rgb(51, 53, 52)
+}
+.textarea{
+    font-size: 1.5rem;
+    border: rgb(0, 0, 0) 0px;
+    border-radius: 6px;
+    margin: 2px;
+    width: 305px;
+    border: solid rgb(0, 0, 0) 1px;
+    box-shadow: 2px 2px 10px rgb(51, 53, 52)
+}
+label{
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+}
+.submit_contact{
+    padding: 7px 0px 7px 0px;
+    font-size: 1rem;
+    color: aliceblue;
+    background: black;
+    border-style: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 15px;
+    width: 458px;
+    box-shadow: 2px 2px 10px rgb(51, 53, 52)
+}
+.submit_contact:hover{
+    font-size: 1.5rem;
+    height: 40;
+}

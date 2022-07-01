@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: aqua;
+}
+.board{
+    background: black;
+    display: grid;
+    width: 80vmin;
+    height:80vmin;
+    grid-template-rows:repeat(30,1fr);
+    grid-template-columns: repeat(30,1fr);
+    justify-self: right;
+    margin-top: 60px;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+.head{
+
+    background-color: aqua;
+    border-radius: 40%;
+
+}
+.food{
+    background-color: antiquewhite;
+    border-radius: 40%;
+}
+.snakebody{
+    background-color: rgb(25, 0, 255);
+    border-radius: 40%;
+
+}
+.score{
+    font-size: 2rem;
+    color: black;
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+.main{
+    display: grid;
+}

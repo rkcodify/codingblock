@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RkCoDiFy|signup</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="./signuppage/signup.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div>
+                <p class="logo"><a href="/" ><img src="logo.png" alt="LOGO" width="70px" height="70px" ></a></p>
+            </div>
+            <ul >
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/content">Courses</a></li>
+                <li><a href="/blog">Blog</a></li>
+            </ul>
+            <div class="login">
+                <a href="/signin"><button id="signin">signin</button></a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="signupsection">
+             <img src="./signuppage/signuplogo.png" alt="signuplogo" height="200px" width="200px">
+            <div>
+                <form action="/signup" method="post" class="signupform">
+                      <label for="username">Username</label>
+                      <input type="text" class="username" name="username" placeholder="username" required>
+                      <label for="email">Email</label>
+                      <input type="email" name="email" class="signupemail" placeholder="email" required>
+                      <label for="telephone">Telephone</label>
+                      <input type="tel" name="telephone" class="signuptelephone" placeholder="Phone No.,optional">
+                      <label for="age">Age</label>
+                      <input type="number" name="age" class="signupage" placeholder="age" min="1" max="90">
+                      <p>Gender </p>
+                      <p>
+                      <label for="male">male</label>
+                      <input type="radio" name="gender" id="male" value="male" checked>
+                      <label for="female">female</label>
+                      <input type="radio" name="gender" id="female" value="female">
+                      <label for="others">others</label>
+                      <input type="radio" name="gender" id="others" value="others">
+                      </p>
+                      <label for="password">Password</label>
+                      <input type="password" class="signuppassword" name="password" minlength="6" placeholder="password" required>
+                      <label for="confirmpassword">Confirmpassword</label>
+                      <input type="password" class="signuppassword" name="confirmpassword" placeholder="confirm password" required><br>
+                      <input type="submit" value="Register" name="submit" class="submit1">
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

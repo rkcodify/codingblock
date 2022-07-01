@@ -1,0 +1,96 @@
+.navbar2{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    margin-top: -20px;
+    list-style: none;
+    width: 100vw;
+    justify-content: center;
+}
+.navbar2 li a{
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    margin-left: 3px;
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    background: white;
+}
+.navbar2 li{
+    padding: 3px;
+    box-shadow: 5px 5px 5px #434344;
+    border-radius: 5px;
+}
+.mainmaincontent{
+    display: flex;
+    margin-top: 3px;
+    flex-direction: column;
+    margin-top: 100px;
+}
+.maincontent{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    margin-top: 50px;
+}
+.imagecontent{
+    border-radius: 10px;
+    width: 280px;
+    height: 250px;
+} 
+.description{
+    background: rgb(255, 254, 254);
+    color: rgb(61, 26, 26);
+    border-radius: 10px;
+    /* box-shadow: 10px 10px 10px rgb(219, 63, 63); */
+    width: 280px;
+    text-align: justify;
+}
+
+.showmore:hover{
+    cursor: pointer;
+}
+.showless:hover{
+    cursor: pointer;
+}
+.showmore{
+   color: white;
+   background: black;
+   text-align: center;
+   border-radius: 10px;
+ }
+.showless{
+    color: white;
+    background: black;
+    text-align: center;
+    border-radius: 10px;
+ }
+
+#htmlmastery{
+    box-shadow: 10px 10px 10px rgb(219, 63, 63);
+}
+
+#cssmastery{
+    box-shadow: 10px 10px 50px rgb(59, 111, 232);
+} 
+#javascriptmastery{
+    box-shadow: 10px 10px 50px rgb(239, 243, 25);
+}
+#nodejsmastery{
+    box-shadow: 10px 10px 50px rgb(25, 153, 5);
+}
+#reactmastery{
+    box-shadow: 10px 10px 50px rgb(25, 243, 243);
+}
+#mongodbmastery{
+    box-shadow: 10px 10px 50px rgb(180, 87, 25);
+}
+#mernstackmastery{
+    box-shadow: 10px 10px 50px rgb(55, 55, 52);
+}
+#pythonmastery{
+    box-shadow: 10px 10px 50px rgb(54, 95, 173);
+}
+#djangomastery{
+    box-shadow: 10px 10px 50px rgb(5, 61, 16);
+}

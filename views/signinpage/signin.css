@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.name {
+    width: 305px;
+    height: 30px;
+    margin: 0px;
+    border: whitesmoke 2px;
+    border-radius: 6px;
+}
+
+.password {
+    width: 305px;
+    height: 30px;
+    margin: 0px;
+    border: whitesmoke 2px;
+    border-radius: 6px;
+    
+}
+
+.submit_signin {
+    padding: 7px 0px 7px 0px;
+    font-size: 1rem;
+    color: aliceblue;
+    background: black;
+    border-style: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.password_error,.email_error{
+    text-align: center;
+    color: red;
+    font-size: 1rem;
+    background-color: black;
+}
+
+.submit_signin:hover {
+    font-size: 1.5rem;
+    height: 40;
+    background-color: black;
+}

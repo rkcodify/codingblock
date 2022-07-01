@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RkCoDiFy|signin</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="./signinpage/signin.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div>
+                <p class="logo"><a href="/" ><img src="logo.png" alt="LOGO" width="70px" height="70px" ></a></p>
+            </div>
+            <ul >
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/content">Courses</a></li>
+                <li><a href="/blog">Blog</a></li>
+            </ul>
+            <div class="login">
+                </a><a href="/signup"><button id="signup">signup</button></a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="signinsection">
+             <img src="./signinpage/signinlogo.png" alt="signinlogo" height="200px" width="200px">
+            <div>
+                <form>
+                      <label for="email">Email</label>
+                      <input type="text" class="name" name="email" placeholder="email" required>
+                      <div class="email_error"></div>
+                      <label for="password" style="margin-top: 15px;">Password</label>
+                      <input type="password" class="password" name="password" placeholder="password" required>
+                      <div class="password_error"></div>
+                      <input type="submit" value="Register" name="submit" class="submit_signin">
+                </form>
+            </div>
+        </section>
+    </main>
+    <script>
+
+        const form = document.querySelector("form");
+        const emailError=document.querySelector(".email_error");
+        const passwordError = document.querySelector(".password_error");
+        form.addEventListener('submit',async (e) => {
+         e.preventDefault();
+
+         //get the values
+            const email = form.email.value;
+            const password = form.password.value;
+
+            try{
+                const res = await fetch('/signin',{
+                    method : 'POST',
+                    body : JSON.stringify({email:email,password:password}),
+                    headers : {'content-type':'application/json'}
+                });
+                const data = await res.json();
+                if(data.errors){
+                emailError.textContent = data.errors.email;
+                passwordError.textContent = data.errors.password;
+                }
+                if(data.user){            
+                    location.assign("/");
+                }
+            }
+            catch(err){
+                console.log(err);
+            }
+         });
+    </script>
+</body>
+</html>

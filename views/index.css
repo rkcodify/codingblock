@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+body::before{
+    content: '';
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:absolute;
+    top:0px;
+    left:0px;
+    width: 100vw;
+    height: 150vh;
+    z-index: -1;
+    opacity: 0.6;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background:linear-gradient(to right,rgb(51, 50, 50),black);
+    z-index: 2;
+    box-shadow: 10px 10px 10px #434344;
+}
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.navbar li{
+    list-style: none;
+    padding: 4px;
+    margin: 6px;
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Quicksand', sans-serif;
+    margin-right: 2px;
+}
+.navbar li a:hover{
+    text-decoration: underline;
+}
+
+.login{
+    margin-top: 31px;
+    font-family: 'Quicksand', sans-serif;
+    margin-right: -103px;
+}
+.login button{
+    padding: 0px 10px 0px 10px;
+    font-size: 1.2rem;
+    font-family: 'Quicksand', sans-serif;
+    color: aliceblue;
+    background: #000;
+    border: 2px solid whitesmoke;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.signinsection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 92px;
+    margin-top: 120px;
+}
+#signup{
+    margin-left: 25px;
+}
+.content{
+    width: 397px;
+    height: auto;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+    background: #000;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-top: 26px;
+}
+.horizontalline{
+    height: 0px;
+    width: 82.2vw;
+    border: solid black 3px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px #434344;
+    text-align: center;
+    padding-left: 0px;
+    margin-left: 90px;
+    margin-top: 24px;
+}
+.button{
+    font-size: 1rem;
+    text-decoration: none;
+    border:2px solid white;
+    color: white;
+    background: #000;
+    border-radius: 10px;
+    padding: 9px;
+    margin-right: 67px;
+}
+
+.contacth{
+    text-align: center;
+    color: rgb(9, 9, 9);
+}
+
+
+.logo:hover{
+    animation: rotate 2s infinite linear;
+ }
+
+@keyframes rotate{
+    from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(359deg);
+      }
+ } 
